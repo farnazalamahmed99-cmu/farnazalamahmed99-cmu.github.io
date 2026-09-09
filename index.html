@@ -84,16 +84,10 @@
         <p class="entry-sub">Intro to Deep Learning course project, CMU</p>
         <p>
           Extended Deep Skill Chaining and Deep Skill Graphs (Bagaria et al., 2020/2021) to humanoid navigation
-          in cluttered environments, abstracting the robot's state to a planar pose and learning options that
-          output high-level velocity commands to a low-level locomotion policy, with an added validation phase
-          for more robust skill chaining. Options were trained with TD3 using a cross-attention policy over
-          state and obstacle tokens, pretrained on expert trajectories and shaped with sparse success/collision
-          rewards plus dense goal-progress rewards. The skill graph was grown via an MPC-guided expansion phase
-          &mdash; using a learned Transformer-based transition model (outperforming an MLP baseline, e.g. 0.03m
-          vs. 0.077m XY error at a 1s horizon) to roll out and add reachable states &mdash; and a consolidation
-          phase that chains together disconnected regions of the graph. Evaluated against A* and vanilla TD3
-          baselines on UMaze and Narrow navigation maps, where the hybrid DSC/DSG approach proved more robust
-          across map types than either pure planning or pure RL alone.
+          in cluttered environments, learning TD3-based options that output high-level velocity commands and
+          chaining them into a graph via MPC rollouts through a learned Transformer transition model. Evaluated
+          against A* and vanilla TD3 baselines on UMaze and Narrow navigation maps, where the hybrid approach
+          proved more robust across map types than either pure planning or pure RL alone.
         </p>
         <div class="card-links">
           <a href="https://github.com/shivangvijay/Deep-Skill-Graph-Based-Humanoid-Navigation-DSG-HN" target="_blank" rel="noopener">Project Page</a>
