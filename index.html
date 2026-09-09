@@ -99,14 +99,12 @@
       <img class="card-thumb" src="assets/images/proj-automatedlab.svg" alt="Automated Lab project thumbnail" />
       <div class="card-body">
         <div class="entry-head">
-          <h3>Automated Lab &mdash; MRSD Capstone Project</h3>
-          <span class="entry-date">Aug 2025 &ndash; Present</span>
+          <h3>Automated Lab</h3>
         </div>
+        <p class="entry-sub">MRSD Capstone Project &middot; Aug 2025 &ndash; Present</p>
         <ul>
           <li>Designed an end-to-end automated lab system that combines multi-camera perception, edge-deployed detection and segmentation, and anomaly monitoring to localize, inspect, and track lab experiments in real time.</li>
-          <li>Built an end-to-end perception pipeline with multi-stage (overhead + wrist camera) sensing for coarse-to-fine localization and precise 3D pose estimation.</li>
-          <li>Deployed real-time detection and segmentation models (YOLOv11) on NVIDIA Jetson Xavier, enabling distributed edge processing via WebSocket-based image and point cloud streaming.</li>
-          <li>Developing an anomaly detection pipeline for lab set-ups using CLIP ViT-B/32 frame embeddings and a dual-transformer spatio-temporal model.</li>
+          <li>Building a training-free video anomaly detection pipeline (O-VAD) in three stages: a vision-language model identifies scene objects and SAM3 grounds them with initial masks; CropFormer and SAM2 track each object frame-by-frame as "tubelets" while the VLM captions observed state changes (movement, deformation, material release, etc.); and a reasoning VLM runs a structured chain of thought &mdash; observe, form an expectation, compare, find a cause, classify, rate severity &mdash; over those tracked changes plus a task description to report the anomalous object, its frames, its type, and a causal explanation rather than just a normal/abnormal label. Running locally with a self-hosted Qwen3-VL-8B backbone in place of the paper's OpenAI backend, and evaluating against labeled lab-automation and physical-anomaly video datasets.</li>
         </ul>
         <div class="card-links">
           <a href="#" data-field="project2-page">Project Page</a>
