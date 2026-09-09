@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Farnaz Alam Ahmed</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-wrap">
+    <a href="#top" class="nav-name">Farnaz Alam Ahmed</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-photo" src="assets/images/profile-photo.jpeg" alt="Farnaz Alam Ahmed" />
+    <div class="hero-text">
+      <h1 class="name">Farnaz Alam Ahmed</h1>
+      <p class="hero-role">MS Robotic Systems Development, Carnegie Mellon University</p>
+      <div class="hero-links">
+        <a href="mailto:farnazaa@andrew.cmu.edu">Email</a>
+        <a href="https://linkedin.com/in/farnazalamahmed" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" data-field="github-link">GitHub</a>
+        <a href="#" data-field="scholar-link">Google Scholar</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      I'm a roboticist working at the intersection of robot learning, computer vision, and embodied AI.
+      My research interests span Vision-Language-Action (VLA) models, world models, and 3D scene understanding.
+      I'm particularly interested in how we can combine rich visual and multimodal representations with
+      learning-based control to give robots robust manipulation and locomotion skills &mdash; especially in
+      environments where uncertainty and real-world variability make traditional approaches difficult.
+    </p>
+    <p>
+      Currently, I'm pursuing an M.S. in Robotic Systems Development at Carnegie Mellon University, where I
+      work on Physical AI, learning-based 3D vision, robot manipulation, and autonomous systems. Long term, I want to build general-purpose
+      embodied AI systems that can learn complex skills, adapt to new environments, and operate reliably in
+      the real world.
+    </p>
+    <p class="callout">
+      I'm always happy to connect with people working in robot learning, embodied AI, humanoid robotics,
+      computer vision, and Physical AI. If you're a student exploring robotics, ML, or graduate school,
+      feel free to reach out &mdash; we can set up a brief conversation. If you're working in a lab
+      or research group on embodied intelligence and see opportunities to collaborate, I'd love to hear from you.
+      I'm currently looking for full-time opportunities in robotics and machine learning starting mid-2027.
+      Reach me at <a href="mailto:farnazaa@andrew.cmu.edu">farnazaa@andrew.cmu.edu</a>.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <img class="card-thumb" src="assets/images/proj-skillgraph.svg" alt="Deep Skill Graph project thumbnail" />
+      <div class="card-body">
+        <div class="entry-head">
+          <h3>Deep Skill Graph for Humanoid Navigation in Cluttered Space</h3>
+          <span class="entry-date">Jan 2026 &ndash; May 2026</span>
+        </div>
+        <ul>
+          <li>Trained a PPO-based low-level locomotion policy and deployed it across Sim2Sim and Sim2Real settings.</li>
+          <li>Developed Transformer- and MLP-based transition dynamics models integrated with an MPC planner for model-based reasoning, achieving up to 3&times; reduction in rollout error.</li>
+          <li>Trained a global policy using TD3 to iteratively learn and expand skill primitives within the graph, achieving +35% improvement in navigation success rate.</li>
+        </ul>
+        <div class="card-links">
+          <a href="#" data-field="project1-page">Project Page</a>
+          <a href="#" data-field="project1-code">Code</a>
+          <a href="#" data-field="project1-video">Video</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-thumb" src="assets/images/proj-automatedlab.svg" alt="Automated Lab project thumbnail" />
+      <div class="card-body">
+        <div class="entry-head">
+          <h3>Automated Lab &mdash; MRSD Capstone Project</h3>
+          <span class="entry-date">Aug 2025 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Built an end-to-end perception pipeline with multi-stage (overhead + wrist camera) sensing for coarse-to-fine localization and precise 3D pose estimation.</li>
+          <li>Deployed real-time detection and segmentation models (YOLOv11) on NVIDIA Jetson Xavier, enabling distributed edge processing via WebSocket-based image and point cloud streaming.</li>
+          <li>Developing an anomaly detection pipeline for lab set-ups using CLIP ViT-B/32 frame embeddings and a dual-transformer spatio-temporal model.</li>
+        </ul>
+        <div class="card-links">
+          <a href="#" data-field="project2-page">Project Page</a>
+          <a href="#" data-field="project2-code">Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Agility_Robotics_logo.svg/250px-Agility_Robotics_logo.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-agility.svg'" alt="Agility Robotics logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="agility-link">Agility Robotics</a></h3>
+          <span class="entry-date">Jun 2026 &ndash; Present</span>
+        </div>
+        <p class="entry-sub">AI Intern &middot; Bangalore</p>
+        <ul>
+          <li>Building a Universal Manipulation Interface gripper-to-policy pipeline for humanoid Digit, converting multimodal MCAP demonstrations into synchronized datasets used to train, evaluate, and improve learned manipulation policies.</li>
+          <li>Developing flow-matching-based policies for Digit and using multimodal robot logs to refine policy behavior, trajectory quality, and sensor-action alignment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Bharat_Electronics_logo.svg/250px-Bharat_Electronics_logo.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-bel.svg'" alt="Bharat Electronics Ltd. logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="bel-link">Bharat Electronics Ltd.</a></h3>
+          <span class="entry-date">Oct 2022 &ndash; Jul 2025</span>
+        </div>
+        <p class="entry-sub">R&amp;D Engineer, Radar Systems &middot; Bangalore</p>
+        <ul>
+          <li>Led end-to-end design, qualification, and integration of radar subsystems (Active Array Antenna Unit, Interrogator, and Exciter Receiver Unit), now operational in production at multiple defense sites.</li>
+          <li>Developed simulation and visualization environments in Unity to support operator training.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Carnegie_Mellon_University_seal.svg/250px-Carnegie_Mellon_University_seal.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-cmu.svg'" alt="Carnegie Mellon University logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="ilim-link">Illumination and Imaging (ILIM) Laboratory, CMU</a></h3>
+          <span class="entry-date">Nov 2025 &ndash; Apr 2026</span>
+        </div>
+        <p class="entry-sub">Research Assistant</p>
+        <ul>
+          <li>Built a 3D reconstruction pipeline using COLMAP for the ULTRRA Challenge dataset, achieving 98.75% image registration, generating 12.9M+ point clouds, and extracting intrinsic/extrinsic parameters for 300+ cameras.</li>
+          <li>Evaluated 3D reconstruction methods (VGGT, MapAnything) vs. COLMAP, achieving ~2.6&times; lower reconstruction error (1.741 &rarr; 0.382) and improving point cloud accuracy to 0.677 with bundle adjustment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Logo_of_JPMorganChase_2024.svg/250px-Logo_of_JPMorganChase_2024.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-jpmorgan.svg'" alt="JP Morgan Chase & Co. logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="jpmorgan-link">JP Morgan Chase &amp; Co. AI Maker Space</a></h3>
+          <span class="entry-date">Aug 2025 &ndash; Jan 2026</span>
+        </div>
+        <p class="entry-sub">Technical Assistant &middot; Project</p>
+        <ul>
+          <li>Fine-tuned Isaac GR00T (N1.6-3B) on Kinova Gen3 pick-and-place demonstrations and deployed a client/server control interface for real-time execution on the robot.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <h2>Publications</h2>
+
+    <div class="card">
+      <img class="card-thumb" src="assets/images/pub-thermo.svg" alt="Thumbnail for thermo-hydraulic flow paper" />
+      <div class="card-body">
+        <h3>Numerical Investigation of Thermo-Hydraulic Features of Viscoplastic Flow in Wavy Channels</h3>
+        <p class="card-authors">Hrishav Dey, Sumit Kumar Mehta, <strong>Farnaz Alam Ahmed</strong>, et al.</p>
+        <p class="card-tldr"><strong>TL;DR:</strong> <span data-field="pub1-tldr">one-line summary of the paper goes here.</span></p>
+        <div class="card-links">
+          <a href="#" data-field="pub1-paper">Paper</a>
+          <a href="#" data-field="pub1-code">Code</a>
+          <a href="#" data-field="pub1-project">Project Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Carnegie_Mellon_University_seal.svg/250px-Carnegie_Mellon_University_seal.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-cmu.svg'" alt="Carnegie Mellon University logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="cmu-link">Carnegie Mellon University</a></h3>
+          <span class="entry-date">May 2027</span>
+        </div>
+        <p class="entry-sub">Master of Science in Robotic Systems Development &middot; GPA: 4.08/4</p>
+        <p class="entry-sub">Relevant Coursework: Computer Vision, Robot Mobility &amp; Autonomy, Deep Learning, System Engineering</p>
+      </div>
+    </div>
+
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/National_Institute_Of_Technology_Silchar_Logo.svg/250px-National_Institute_Of_Technology_Silchar_Logo.svg.png" onerror="this.onerror=null;this.src='assets/images/logo-nit.svg'" alt="National Institute of Technology Silchar logo" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <h3><a href="#" data-field="nit-link">National Institute of Technology, Silchar</a></h3>
+          <span class="entry-date">May 2022</span>
+        </div>
+        <p class="entry-sub">Bachelor of Technology in Mechanical Engineering &middot; CGPA: 9.5/10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h4>Programming &amp; Software</h4>
+        <div class="tag-list">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">C</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+      <div>
+        <h4>Robotics &amp; Simulation</h4>
+        <div class="tag-list">
+          <span class="tag">ROS2</span>
+          <span class="tag">MuJoCo</span>
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">Isaac Lab</span>
+          <span class="tag">COLMAP</span>
+          <span class="tag">Gazebo</span>
+          <span class="tag">Unity</span>
+        </div>
+      </div>
+      <div>
+        <h4>Hardware &amp; Design</h4>
+        <div class="tag-list">
+          <span class="tag">Docker</span>
+          <span class="tag">CAD Modelling</span>
+          <span class="tag">NVIDIA Jetson</span>
+          <span class="tag">Sensor Integration</span>
+          <span class="tag">Military-Grade Qualification Testing</span>
+          <span class="tag">JSS 55555 Environmental Testing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <p>Let's talk about robotics, vision, and learning.</p>
+  <div class="footer-links">
+    <a href="mailto:farnazaa@andrew.cmu.edu">farnazaa@andrew.cmu.edu</a>
+    <a href="https://linkedin.com/in/farnazalamahmed" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#" data-field="github-link">GitHub</a>
+    <a href="#" data-field="scholar-link">Google Scholar</a>
+    <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+  <p class="footer-note">&copy; 2026 Farnaz Alam Ahmed</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

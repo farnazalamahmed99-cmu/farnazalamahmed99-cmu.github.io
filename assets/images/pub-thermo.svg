@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225">
+  <rect width="400" height="225" fill="#e4e0d4"/>
+  <path d="M40 160 Q100 100 160 160 T280 160 T400 160" stroke="#b9b2a3" stroke-width="6" fill="none"/>
+  <path d="M40 120 Q100 60 160 120 T280 120 T400 120" stroke="#a8a396" stroke-width="6" fill="none"/>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="14" fill="#5a5648" text-anchor="middle">add figure / thumbnail</text>
+</svg>
