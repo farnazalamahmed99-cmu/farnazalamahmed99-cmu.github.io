@@ -104,8 +104,8 @@
         </div>
         <p class="entry-sub">MRSD Capstone Project &middot; Aug 2025 &ndash; Present</p>
         <ul>
-          <li>Designed an end-to-end automated lab system that combines multi-camera perception, edge-deployed detection and segmentation, and anomaly monitoring to localize, inspect, and track lab experiments in real time.</li>
-          <li>Building a training-free video anomaly detection pipeline (O-VAD) in three stages: a vision-language model identifies scene objects and SAM3 grounds them with initial masks; CropFormer and SAM2 track each object frame-by-frame as "tubelets" while the VLM captions observed state changes (movement, deformation, material release, etc.); and a reasoning VLM runs a structured chain of thought &mdash; observe, form an expectation, compare, find a cause, classify, rate severity &mdash; over those tracked changes plus a task description to report the anomalous object, its frames, its type, and a causal explanation rather than just a normal/abnormal label. Running locally with a self-hosted Qwen3-VL-8B backbone in place of the paper's OpenAI backend, and evaluating against labeled lab-automation and physical-anomaly video datasets.</li>
+          <li>Building APEX Labs, an autonomous lab-automation system where a mobile xArm 6 manipulator turns natural-language experiment descriptions into structured commands, perceives and localizes equipment via stereo cameras and YOLOv11, plans grasps and paths with RRT*/CHOMP, and runs lab machines (an Opentrons liquid handler and a custom shaker) end-to-end while navigating the lab via Gaussian-Splatting SLAM.</li>
+          <li>Also building a training-free video anomaly detection pipeline (O-VAD) that grounds and tracks scene objects (VLM + SAM3 + SAM2/CropFormer) and uses a reasoning VLM to diagnose anomalies with a causal explanation rather than a simple label, running locally on a self-hosted Qwen3-VL-8B backbone.</li>
         </ul>
         <div class="card-links">
           <a href="#" data-field="project2-page">Project Page</a>
