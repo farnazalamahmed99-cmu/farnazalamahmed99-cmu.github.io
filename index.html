@@ -131,6 +131,7 @@
         <ul>
           <li>Built a production COLMAP + OpenMVS reconstruction pipeline for the WACV 2025 ULTRRA Challenge, registering 498 of 556 cameras (89.6%) across four benchmark tasks and generating a 12.9M-point dense reconstruction; systematic SfM parameter tuning raised registration on the hardest tasks from 35% to 85% and 67% to 99%.</li>
           <li>Evaluated 3D reconstruction methods (VGGT, MapAnything) vs. COLMAP, achieving ~2.6&times; lower reconstruction error (1.741 &rarr; 0.382) and improving point cloud accuracy to 0.677 with bundle adjustment.</li>
+          <li>Stress-tested the same methods on sparse, low-overlap MegaScenes datasets (17 images each): VGGT gave the cleanest, fastest reconstructions; COLMAP registered only 2&ndash;7 of 17 images per scene without sufficient overlap; and MapAnything, though slower than VGGT, occasionally succeeded where VGGT degraded, while failing outright on the lowest-overlap scene.</li>
         </ul>
         <div class="card-links">
           <a href="https://github.com/farnazalamahmed99-cmu/Illumination-and-Imaging-Lab-Projects" target="_blank" rel="noopener">Project Page</a>
