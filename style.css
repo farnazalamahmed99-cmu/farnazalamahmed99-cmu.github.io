@@ -238,6 +238,11 @@ main {
   border: 1px solid var(--border);
 }
 
+.card-thumb.thumb-contain {
+  object-fit: contain;
+  background: var(--bg-card);
+}
+
 .card-body { flex: 1; min-width: 0; }
 
 .card-body h3 {
