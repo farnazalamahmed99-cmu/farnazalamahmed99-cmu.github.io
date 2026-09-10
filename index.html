@@ -85,6 +85,7 @@
         <ul>
           <li>Built the gripper-to-policy data pipeline for humanoid Digit around a Universal Manipulation Interface (UMI)-style handheld gripper &mdash; a portable, camera-and-IMU-equipped device that lets demonstrations be recorded by hand in seconds rather than through teleoperation &mdash; converting its multimodal MCAP recordings into Learning-from-Demonstration datasets, with QA validation and retargeting onto the real robot.</li>
           <li>Trained flow-matching manipulation policies with a ResNet visual backbone on this data, adapting the policy architecture specifically for handheld-only datasets, and deployed the resulting policies on Digit for tote manipulation, block manipulation, and shelf-stocking tasks.</li>
+          <li>Tuned an RL-based whole-body controller to track this dataset's manipulation policy commands, coordinating arm and locomotion behavior for stable execution on the physical robot.</li>
           <li>Contributed to the in-house team building Agility's own UMI-style handheld data-collection gripper.</li>
         </ul>
       </div>
