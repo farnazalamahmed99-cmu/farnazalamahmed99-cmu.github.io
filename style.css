@@ -112,6 +112,12 @@ main {
   padding: 0 24px;
 }
 
+.paintings-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
 /* Hero */
 .hero {
   display: flex;
