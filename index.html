@@ -83,7 +83,9 @@
         </div>
         <p class="entry-sub">AI Intern &middot; Pittsburgh</p>
         <ul>
-          <li>Built an end-to-end gripper-to-policy pipeline for humanoid Digit around the Universal Manipulation Interface (UMI) handheld gripper &mdash; visual-inertial tracking, MCAP-to-dataset conversion, automated quality checks, and cloud-based training that scaled the dataset from 236 to 479 episodes &mdash; and developed flow-matching-based manipulation policies, using multimodal robot logs to refine policy behavior, trajectory quality, and sensor-action alignment.</li>
+          <li>Built the gripper-to-policy data pipeline for humanoid Digit around a handheld Data Acquisition System (DAS) gripper &mdash; converting its multimodal MCAP recordings (stereo/fisheye video, IMU, tactile, audio) into Learning-from-Demonstration datasets, with QA validation and retargeting onto the real robot; being handheld rather than teleoperated removed the biggest bottleneck in data collection, since demonstrations no longer needed robot or teleop-rig time to record.</li>
+          <li>Trained flow-matching manipulation policies with a ResNet visual backbone on this data, adapting the policy architecture specifically for handheld-only datasets, and deployed the resulting policies on Digit for tote manipulation, block manipulation, and shelf-stocking tasks.</li>
+          <li>Contributed to the in-house team building Agility's own handheld data-collection gripper.</li>
         </ul>
       </div>
     </div>
