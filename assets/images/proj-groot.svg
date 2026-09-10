@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225">
+  <rect width="400" height="225" fill="#e4e0d4"/>
+  <rect x="170" y="40" width="16" height="70" fill="#b9b2a3"/>
+  <rect x="150" y="105" width="56" height="14" fill="#b9b2a3"/>
+  <rect x="120" y="115" width="16" height="55" fill="#b9b2a3"/>
+  <rect x="210" y="115" width="16" height="55" fill="#b9b2a3"/>
+  <circle cx="128" cy="180" r="10" fill="#a8a396"/>
+  <circle cx="218" cy="180" r="10" fill="#a8a396"/>
+  <rect x="260" y="70" width="70" height="50" rx="4" fill="#b9b2a3"/>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="14" fill="#5a5648" text-anchor="middle">add project image / gif</text>
+</svg>
