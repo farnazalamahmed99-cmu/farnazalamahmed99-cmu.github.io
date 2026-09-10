@@ -209,12 +209,12 @@ main {
 .card:hover::before { opacity: 1; }
 
 .entry-logo {
-  width: 84px;
-  height: 84px;
-  min-width: 84px;
-  border-radius: 10px;
+  width: 112px;
+  height: 112px;
+  min-width: 112px;
+  border-radius: 12px;
   object-fit: contain;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid var(--border);
   background: #ffffff;
 }
